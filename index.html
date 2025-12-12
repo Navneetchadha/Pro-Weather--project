@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherNow Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2 class="title">🌤 WeatherNow Pro</h2>
+
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Search City...">
+            <button onclick="getWeather()">Search</button>
+        </div>
+
+        <div id="weatherBox" class="weather-box hidden">
+            <h3 id="cityName"></h3>
+
+            <div class="icon-box">
+                <img id="weatherIcon" width="120">
+            </div>
+
+            <div class="info">
+                <p id="temperature"></p>
+                <p id="description"></p>
+                <p id="humidity"></p>
+                <p id="wind"></p>
+            </div>
+        </div>
+
+        <p id="errorMsg" class="error hidden">⚠ City not found!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
